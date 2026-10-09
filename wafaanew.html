@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wafaa Ibrahim | English Language Educator & Teacher Development Trainer</title>
+  <meta name="description" content="Professional Teaching Portfolio for Wafaa Ibrahim - English Language Educator. Candidate for American Creativity Academy (ACA), Kuwait.">
+  <style>
+    :root {
+      --navy: #142C4B;
+      --navy-dark: #0D1E34;
+      --blue: #347AA4;
+      --blue-light: #4A93BF;
+      --sky: #EAF4FA;
+      --sky-tint: #F3F8FC;
+      --gold: #CBA75D;
+      --gold-hover: #B89247;
+      --white: #FFFFFF;
+      --text-main: #1C2D42;
+      --text-muted: #53677F;
+      --border: #E2EBF2;
+      --shadow-sm: 0 4px 12px rgba(20, 44, 75, 0.06);
+      --shadow-md: 0 10px 28px rgba(20, 44, 75, 0.1);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-full: 9999px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #FBFDFE; color: var(--text-main); line-height: 1.6; }
+    .container { width: 92%; max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+
+    /* Navigation */
+    header { position: sticky; top: 0; background: rgba(255, 255, 255, 0.98); border-bottom: 1px solid var(--border); z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+    .nav-wrap { display: flex; justify-content: space-between; align-items: center; height: 75px; }
+    .logo { font-size: 1.45rem; font-weight: 700; color: var(--navy); text-decoration: none; font-family: Georgia, serif; }
+    .logo span { display: block; font-size: 0.75rem; color: var(--blue); text-transform: uppercase; font-family: sans-serif; letter-spacing: 0.08em; }
+    .nav-links { display: flex; gap: 1.4rem; list-style: none; align-items: center; }
+    .nav-links a { text-decoration: none; color: var(--navy); font-weight: 600; font-size: 0.9rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--blue); }
+    .btn-admin { background: transparent; border: 1px solid var(--gold); color: #8A6518; padding: 0.35rem 0.9rem; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.3s; }
+    .btn-admin:hover { background: var(--gold); color: var(--white); }
+    .btn-nav { background: var(--navy); color: var(--white) !important; padding: 0.45rem 1.2rem; border-radius: var(--radius-full); }
+    .btn-nav:hover { background: var(--blue); }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(135deg, #FFFFFF 0%, #F4F8FC 60%, #EBF3FA 100%); padding: 4.5rem 0 3.5rem 0; }
+    .hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; gap: 3rem; }
+    .badge { display: inline-block; background: var(--sky); color: var(--navy); padding: 0.4rem 1.1rem; border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 600; margin-bottom: 1.2rem; border: 1px solid #D5E4F0; }
+    h1 { font-family: Georgia, serif; font-size: 3.2rem; color: var(--navy); line-height: 1.18; margin-bottom: 1rem; }
+    h1 em { color: var(--blue); font-style: italic; }
+    .hero-name { font-size: 1.5rem; font-weight: 700; color: var(--navy); margin-bottom: 0.6rem; }
+    .hero-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.4rem; }
+    .pill { font-size: 0.82rem; font-weight: 600; background: var(--white); color: var(--navy); border: 1px solid #CFDFED; padding: 0.3rem 0.85rem; border-radius: var(--radius-full); }
+    .pill.gold { background: rgba(203, 167, 93, 0.15); color: #826017; border-color: rgba(203, 167, 93, 0.4); }
+    .hero-desc { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 2rem; max-width: 580px; }
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.6rem; border-radius: var(--radius-full); font-size: 0.92rem; font-weight: 600; text-decoration: none; cursor: pointer; transition: all 0.3s; border: none; }
+    .btn-primary { background: var(--navy); color: var(--white); }
+    .btn-primary:hover { background: var(--blue); transform: translateY(-2px); }
+    .btn-secondary { background: var(--white); color: var(--navy); border: 1px solid #CBD8E6; }
+    .btn-secondary:hover { background: var(--sky); color: var(--blue); }
+
+    /* Portrait */
+    .portrait-wrap { position: relative; max-width: 360px; margin: 0 auto; }
+    .portrait-accent { position: absolute; inset: -10px; border: 2px solid var(--gold); border-radius: var(--radius-md); z-index: 1; }
+    .portrait-img { position: relative; z-index: 2; width: 100%; height: 440px; object-fit: cover; object-position: top; border-radius: var(--radius-md); box-shadow: var(--shadow-md); background: #E2E8F0; }
+
+    /* Metrics Bar */
+    .metrics-bar { background: var(--white); border-top: 1px solid #E6EEF5; border-bottom: 1px solid #E6EEF5; padding: 1.5rem 0; margin-top: 3.5rem; }
+    .metrics-grid { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1.5rem; text-align: center; }
+    .metric-val { font-family: Georgia, serif; font-size: 2.2rem; font-weight: bold; color: var(--navy); }
+    .metric-label { font-size: 0.82rem; font-weight: 600; color: var(--text-muted); }
+
+    /* Sections */
+    section { padding: 5rem 0; }
+    .sec-header { text-align: center; max-width: 820px; margin: 0 auto 3.5rem auto; }
+    .sec-tag { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--blue); background: var(--sky); padding: 0.3rem 0.9rem; border-radius: var(--radius-full); display: inline-block; margin-bottom: 0.6rem; }
+    .sec-title { font-family: Georgia, serif; font-size: 2.4rem; color: var(--navy); margin-bottom: 0.75rem; }
+    .title-line { width: 50px; height: 3px; background: var(--gold); margin: 0 auto 1rem auto; border-radius: 2px; }
+    .sec-subtitle { font-size: 1rem; color: var(--text-muted); }
+
+    /* Gallery Grid */
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.75rem; }
+    .gallery-card { background: var(--white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-sm); transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; cursor: pointer; position: relative; }
+    .gallery-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+    .img-box { position: relative; height: 260px; background: #E9F1F7; overflow: hidden; }
+    .img-box img { width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 0.4s; }
+    .gallery-card:hover .img-box img { transform: scale(1.05); }
+    .img-tag { position: absolute; top: 12px; left: 12px; background: rgba(20, 44, 75, 0.85); color: var(--white); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: var(--radius-sm); backdrop-filter: blur(4px); }
+    .card-body { padding: 1.35rem; display: flex; flex-direction: column; flex-grow: 1; }
+    .card-title { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; line-height: 1.35; }
+    .card-caption { font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; }
+    .zoom-hint { margin-top: auto; padding-top: 0.8rem; font-size: 0.78rem; font-weight: 600; color: var(--blue); display: flex; align-items: center; gap: 0.3rem; }
+
+    /* Admin Action Icons on Cards */
+    .card-admin-actions { position: absolute; top: 12px; right: 12px; display: none; gap: 6px; z-index: 10; }
+    body.admin-mode .card-admin-actions { display: flex; }
+    .btn-act { background: rgba(20, 44, 75, 0.9); color: #fff; border: none; border-radius: 4px; padding: 4px 8px; font-size: 0.72rem; cursor: pointer; font-weight: 600; }
+    .btn-act.delete { background: rgba(192, 41, 43, 0.9); }
+    .btn-act:hover { opacity: 0.9; }
+
+    /* Lightbox Modal */
+    .lightbox-modal { display: none; position: fixed; inset: 0; background: rgba(9, 21, 36, 0.92); z-index: 2000; align-items: center; justify-content: center; padding: 1.5rem; backdrop-filter: blur(6px); }
+    .lightbox-modal.active { display: flex; }
+    .lightbox-content { max-width: 900px; width: 100%; max-height: 90vh; display: flex; flex-direction: column; align-items: center; position: relative; }
+    .lightbox-img { max-height: 75vh; max-width: 100%; border-radius: var(--radius-sm); box-shadow: var(--shadow-md); background: #000; object-fit: contain; }
+    .lightbox-caption { color: var(--white); margin-top: 1rem; text-align: center; font-size: 0.95rem; max-width: 750px; line-height: 1.5; }
+    .lightbox-close { position: absolute; top: -45px; right: 0; background: none; border: none; color: var(--white); font-size: 2rem; cursor: pointer; }
+
+    /* Admin Floating Toolbar & Modal */
+    .admin-bar { display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--navy); color: var(--white); padding: 0.8rem 1.8rem; border-radius: var(--radius-full); box-shadow: var(--shadow-md); z-index: 1500; align-items: center; gap: 1rem; border: 2px solid var(--gold); }
+    body.admin-mode .admin-bar { display: flex; }
+    .admin-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 2500; align-items: center; justify-content: center; padding: 1.5rem; }
+    .admin-modal.active { display: flex; }
+    .admin-form-box { background: var(--white); border-radius: var(--radius-md); padding: 2rem; width: 100%; max-width: 520px; box-shadow: var(--shadow-md); }
+    .admin-form-box h3 { margin-bottom: 1.2rem; color: var(--navy); font-family: Georgia, serif; font-size: 1.4rem; }
+    .form-group { margin-bottom: 1rem; }
+    .form-group label { display: block; font-size: 0.82rem; font-weight: 700; color: var(--navy); margin-bottom: 0.35rem; text-transform: uppercase; }
+    .form-control { width: 100%; padding: 0.65rem 0.9rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 0.9rem; }
+    textarea.form-control { resize: vertical; min-height: 80px; }
+    .form-btns { display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem; }
+
+    /* Contact Box */
+    .contact-card { background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%); color: var(--white); border-radius: var(--radius-md); padding: 4rem 2.5rem; text-align: center; }
+    .contact-card h2 { font-family: Georgia, serif; font-size: 2.6rem; margin-bottom: 1rem; }
+    .contact-info { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 2.5rem; }
+    .contact-item { background: rgba(255, 255, 255, 0.08); padding: 1.2rem 1.8rem; border-radius: var(--radius-sm); text-align: left; }
+    .contact-item strong { display: block; color: var(--gold); font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.2rem; }
+    .contact-item a { color: var(--white); text-decoration: none; font-weight: 600; }
+    footer { text-align: center; padding: 2rem 0; font-size: 0.85rem; background: #091524; color: #8CA0BA; }
+
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; text-align: center; }
+      .hero-pills, .hero-btns { justify-content: center; }
+      .portrait-wrap { margin-top: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-wrap">
+      <a href="#hero" class="logo">Wafaa Ibrahim<span>English Educator & Trainer</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#qualifications">Credentials</a></li>
+        <li><a href="#classroom">Classroom Evidence</a></li>
+        <li><a href="#awards">Honors</a></li>
+        <li><a href="#contact" class="btn-nav">Contact</a></li>
+        <li><button class="btn-admin" id="adminToggleBtn" onclick="toggleAdminPrompt()">Admin Mode</button></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Candidate for American Creativity Academy (ACA), Kuwait (2026–2027)</span>
+          <h1>Empowering Young Learners.<br><em>Inspiring Lifelong Learning.</em></h1>
+          <div class="hero-name">Wafaa Ibrahim Mohamed Idris</div>
+          <div class="hero-pills">
+            <span class="pill">English Language Educator</span>
+            <span class="pill">Teacher Development Trainer</span>
+            <span class="pill gold">25+ Years Teaching Experience</span>
+          </div>
+          <p class="hero-desc">
+            Primary English educator with 18+ years of dedicated classroom service under the Kuwait Ministry of Education. Specializing in learner-centered pedagogy, active phonics routines, differentiated instruction, and ethical educational technology.
+          </p>
+          <div class="hero-btns">
+            <a href="#qualifications" class="btn btn-primary">Explore Verified Credentials ↓</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="portrait-wrap">
+          <div class="portrait-accent"></div>
+          <img src="images/portrait.jpg" onerror="fixImg(this)" alt="Wafaa Ibrahim - English Language Teacher" class="portrait-img">
+        </div>
+      </div>
+
+      <div class="container metrics-bar">
+        <div class="metrics-grid">
+          <div><div class="metric-val">25+</div><div class="metric-label">Years English Teaching</div></div>
+          <div><div class="metric-val">18+</div><div class="metric-label">Years in Kuwait MoE</div></div>
+          <div><div class="metric-val">TOT</div><div class="metric-label">Certified International Trainer</div></div>
+          <div><div class="metric-val">A+</div><div class="metric-label">Professional Master in AI (Honors)</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: ACADEMIC DEGREES & CERTIFICATIONS -->
+    <section id="qualifications">
+      <div class="container">
+        <div class="sec-header">
+          <span class="sec-tag">Verified Credentials</span>
+          <h2 class="sec-title">Academic Degrees & Certifications</h2>
+          <div class="title-line"></div>
+          <p class="sec-subtitle">Authenticated university diplomas, advanced professional master's studies, and accredited international qualifications.</p>
+        </div>
+
+        <div class="gallery-grid" id="certGrid">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: TEACHING IN ACTION (CLASSROOM EVIDENCE) -->
+    <section id="classroom" style="background:#F4F8FB;">
+      <div class="container">
+        <div class="sec-header">
+          <span class="sec-tag">Pedagogical Practice</span>
+          <h2 class="sec-title">Teaching in Action: Authentic Classroom Evidence</h2>
+          <div class="title-line"></div>
+          <p class="sec-subtitle">Documented instructional practices from primary school classrooms in Kuwait illustrating kinesthetic learning, differentiated manipulatives, and authentic communication.</p>
+        </div>
+
+        <div class="gallery-grid" id="classroomGrid">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: AWARDS & HONORS -->
+    <section id="awards">
+      <div class="container">
+        <div class="sec-header">
+          <span class="sec-tag">Recognition</span>
+          <h2 class="sec-title">Awards & Professional Honors</h2>
+          <div class="title-line"></div>
+          <p class="sec-subtitle">Honors received from educational districts, school leadership, and pedagogical committees for outstanding educational contribution.</p>
+        </div>
+
+        <div class="gallery-grid" id="awardsGrid">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT -->
+    <section id="contact" style="background:#F4F8FB;">
+      <div class="container">
+        <div class="contact-card">
+          <h2>Let's Connect for ACA 2026–2027</h2>
+          <p style="color:#D2E2F2; font-size:1.05rem; max-width:700px; margin:0 auto;">
+            I welcome the opportunity to discuss how my extensive classroom experience, commitment to active student engagement, and educational technology leadership will enrich the English department at American Creativity Academy (ACA), Kuwait.
+          </p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <strong>Location</strong>
+              <span>Kuwait (Resident / Ready to Join)</span>
+            </div>
+            <div class="contact-item">
+              <strong>Phone & WhatsApp</strong>
+              <a href="tel:+96594019964">+965 9401 9964</a>
+            </div>
+            <div class="contact-item">
+              <strong>Official Email</strong>
+              <a href="mailto:Ofa2337711@yahoo.com">Ofa2337711@yahoo.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Admin Floating Bar -->
+  <div class="admin-bar" id="adminBar">
+    <span>🔒 <strong>Admin Mode Active</strong></span>
+    <button class="btn btn-secondary" style="padding:0.4rem 1rem; font-size:0.8rem;" onclick="openAddModal()">+ Add New Item</button>
+    <button class="btn btn-primary" style="padding:0.4rem 1rem; font-size:0.8rem;" onclick="exportHTMLFile()">💾 Save / Export HTML</button>
+    <button class="btn btn-secondary" style="padding:0.4rem 1rem; font-size:0.8rem;" onclick="exitAdmin()">Exit</button>
+  </div>
+
+  <!-- Admin Add/Edit Modal Form -->
+  <div class="admin-modal" id="adminModal">
+    <div class="admin-form-box">
+      <h3 id="formModalTitle">Add New Credential / Item</h3>
+      <input type="hidden" id="editIndex">
+      <div class="form-group">
+        <label>Section</label>
+        <select class="form-control" id="itemSection">
+          <option value="cert">Academic Degrees & Certifications</option>
+          <option value="classroom">Classroom Evidence</option>
+          <option value="award">Awards & Honors</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Badge Category (e.g. University Degree, Phonics, Shield)</label>
+        <input type="text" class="form-control" id="itemTag" placeholder="e.g. Accredited Certification">
+      </div>
+      <div class="form-group">
+        <label>Title (English)</label>
+        <input type="text" class="form-control" id="itemTitle" placeholder="e.g. Postgraduate Diploma in Education">
+      </div>
+      <div class="form-group">
+        <label>Image Filename or Path</label>
+        <input type="text" class="form-control" id="itemImg" placeholder="e.g. images/cert5.jpg">
+      </div>
+      <div class="form-group">
+        <label>Professional Description / Strategy (English)</label>
+        <textarea class="form-control" id="itemCaption" placeholder="Describe the certificate, institution, year, or pedagogical methodology..."></textarea>
+      </div>
+      <div class="form-btns">
+        <button class="btn btn-secondary" onclick="closeAddModal()">Cancel</button>
+        <button class="btn btn-primary" onclick="saveItem()">Save Item</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox(event)">
+    <div class="lightbox-content">
+      <button class="lightbox-close" onclick="forceCloseLightbox()">×</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCap"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Wafaa Ibrahim. All rights reserved. Candidate Portfolio for American Creativity Academy (ACA), Kuwait.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Initial Verified Dataset with Academic English Descriptions
+    const defaultData = [
+      // 1. Certificates
+      {
+        section: "cert",
+        tag: "University Degree",
+        title: "BA in Arts & Education (English)",
+        img: "images/cert1.jpg",
+        caption: "Bachelor of Arts and Education in English Language, awarded May 1999 from the Faculty of Women, Ain Shams University, Egypt. Validated with official transcript, grade 'Good', and Ministry authentication."
+      },
+      {
+        section: "cert",
+        tag: "Professional Master",
+        title: "Master in Artificial Intelligence",
+        img: "images/cert2.jpg",
+        caption: "Professional Master of Artificial Intelligence from Stanford College of Vocational Education, United Kingdom (UKRLP: 10095638). Completed August 20, 2026, with an overall grade of 93.25% (A+, Excellence with Honors)."
+      },
+      {
+        section: "cert",
+        tag: "Academic Transcript",
+        title: "Official AI Master's Transcript",
+        img: "images/cert3.jpg",
+        caption: "Official transcript from Stanford College of Vocational Education UK detailing foundational coursework: Principles of AI (93%), Machine Learning (91%), Deep Learning (90%), Natural Language Processing (94%), Computer Vision (96%), and Intelligent Robotics (93%)."
+      },
+      {
+        section: "cert",
+        tag: "British Board",
+        title: "Specialized Master's in AI",
+        img: "images/cert4.jpg",
+        caption: "Specialized Master's Certificate of Excellence in Professional Study from The British Board. Comprises 90 intensive study hours covering theoretical and applied modern AI paradigms (May 20, 2026)."
+      },
+
+      // 2. Classroom Evidence
+      {
+        section: "classroom",
+        tag: "Kinesthetic Phonics",
+        title: "Tactile Vowel Recognition",
+        img: "images/class1.jpg",
+        caption: "Movement-based phonemic drill: Primary learners physically handle oversized 3D vowel letters (A, E, U) to associate tactile shapes with short and long phonemes, boosting vocal participation."
+      },
+      {
+        section: "classroom",
+        tag: "Structured Grammar",
+        title: "Sentence Flip-Chart Routine",
+        img: "images/class2.jpg",
+        caption: "Multi-sensory sentence generation: Young learners manipulate visual flip-boards to practice singular and plural syntactic structures ('I have one... / I have two...') with real-time corrective feedback."
+      },
+      {
+        section: "classroom",
+        tag: "Peer Collaboration",
+        title: "Phonics Word-Sorting Stations",
+        img: "images/class3.jpg",
+        caption: "Collaborative small-group decoding: Learners categorize targeted vowel digraphs (ee, oo, oy, ea) onto colorful ice-cream cones, reinforcing phonological awareness through structured teamwork."
+      },
+      {
+        section: "classroom",
+        tag: "Authentic Roleplay",
+        title: "School Channel Broadcast",
+        img: "images/class4.jpg",
+        caption: "Communicative language simulation: Students wear professional attire (engineer helmets, doctor coats) and conduct peer broadcast interviews to practice target career vocabulary and authentic question formation."
+      },
+
+      // 3. Awards & Honors
+      {
+        section: "award",
+        tag: "District Commendation",
+        title: "Model Lesson Recognition",
+        img: "images/award1.jpg.jpg",
+        caption: "Formal honoring ceremony commending Wafaa Ibrahim for presenting a benchmark model English demonstration lesson for Grade 1 at the Hawalli Educational Area level."
+      },
+      {
+        section: "award",
+        tag: "School Plaque",
+        title: "Plaque of Appreciation",
+        img: "images/award1.jpg",
+        caption: "Honor plaque presented by Jassem Mohammed Al-Ibrahim Primary School administration and English Technical Guidance in recognition of exemplary classroom instruction and leadership in teacher professional development."
+      },
+      {
+        section: "award",
+        tag: "Curriculum Project",
+        title: "Teacher's Kit Grade 3B Project",
+        img: "images/award3.jpg",
+        caption: "Certificate of appreciation from the English Technical Guidance office, Hawalli Educational District (2017/2018), recognizing active contributions to developing the official Grade 3B Teacher's Resource Kit."
+      },
+      {
+        section: "award",
+        tag: "Ideal Teacher",
+        title: "Teacher of the Month Award",
+        img: "images/award4.jpg",
+        caption: "Awarded 'Ideal Teacher of the Month' (March 2010/2011) by Khabbab Bin Al-Arat Primary School for Boys in recognition of continuous dedication, inspiring rapport with students, and instructional excellence."
+      },
+      {
+        section: "award",
+        tag: "Syndicate Shield",
+        title: "Syndicate Excellence Shield",
+        img: "images/award5.jpg",
+        caption: "Honor shield conferred by the Teachers' Syndicate Committee (Itay El Baroud, Egypt, 2008) in tribute to outstanding dedication and substantial contribution to the English educational process."
+      }
+    ];
+
+    // Load Data from LocalStorage or default
+    let portfolioItems = JSON.parse(localStorage.getItem('wafaa_portfolio_items')) || defaultData;
+
+    function renderAll() {
+      const certGrid = document.getElementById('certGrid');
+      const classGrid = document.getElementById('classroomGrid');
+      const awardGrid = document.getElementById('awardsGrid');
+
+      certGrid.innerHTML = '';
+      classGrid.innerHTML = '';
+      awardGrid.innerHTML = '';
+
+      portfolioItems.forEach((item, index) => {
+        const card = document.createElement('div');
+        card.className = 'gallery-card';
+        card.onclick = () => openLightbox(item.img, item.caption);
+
+        card.innerHTML = `
+          <div class="card-admin-actions">
+            <button class="btn-act" onclick="event.stopPropagation(); editItem(${index})">Edit</button>
+            <button class="btn-act delete" onclick="event.stopPropagation(); deleteItem(${index})">Delete</button>
+          </div>
+          <div class="img-box">
+            <span class="img-tag">${item.tag}</span>
+            <img src="${item.img}" onerror="fixImg(this)" alt="${item.title}">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">${item.title}</h4>
+            <p class="card-caption">${item.caption}</p>
+            <div class="zoom-hint">🔍 Click to enlarge certificate / photo</div>
+          </div>
+        `;
+
+        if (item.section === 'cert') certGrid.appendChild(card);
+        else if (item.section === 'classroom') classGrid.appendChild(card);
+        else if (item.section === 'award') awardGrid.appendChild(card);
+      });
+    }
+
+    // Auto-fix double extension (.jpg.jpg) if needed
+    function fixImg(img) {
+      if (!img.dataset.tried) {
+        img.dataset.tried = "true";
+        if (img.src.endsWith('.jpg')) {
+          img.src = img.src + '.jpg';
+        }
+      }
+    }
+
+    // Lightbox Controls
+    function openLightbox(src, caption) {
+      const modalImg = document.getElementById('lightboxImg');
+      modalImg.src = src;
+      modalImg.onerror = function() {
+        if (!this.dataset.tried) {
+          this.dataset.tried = "true";
+          this.src = src + '.jpg';
+        }
+      };
+      document.getElementById('lightboxCap').innerText = caption;
+      document.getElementById('lightboxModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e.target.id === 'lightboxModal') forceCloseLightbox();
+    }
+
+    function forceCloseLightbox() {
+      document.getElementById('lightboxModal').classList.remove('active');
+      document.getElementById('lightboxImg').src = '';
+      document.body.style.overflow = '';
+    }
+
+    // --- SECURE HASHED AUTHENTICATION (SHA-256) ---
+    async function hashText(str) {
+      const buffer = new TextEncoder().encode(str);
+      const hash = await crypto.subtle.digest('SHA-256', buffer);
+      return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    async function toggleAdminPrompt() {
+      if (document.body.classList.contains('admin-mode')) {
+        exitAdmin();
+        return;
+      }
+      
+      const pass = prompt("Enter Administrator Access Key:");
+      if (!pass) return;
+
+      const enteredHash = await hashText(pass);
+      // Hashed representation of the password "1234" (Cannot be reversed)
+      const secureHash = "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4";
+
+      if (enteredHash === secureHash) {
+        document.body.classList.add('admin-mode');
+        document.getElementById('adminToggleBtn').innerText = "Exit Admin";
+        alert("Admin Mode Enabled! You can now Add, Edit, or Delete items.");
+      } else {
+        alert("Unauthorized access.");
+      }
+    }
+
+    function exitAdmin() {
+      document.body.classList.remove('admin-mode');
+      document.getElementById('adminToggleBtn').innerText = "Admin Mode";
+    }
+
+    // Add / Edit Item Logic
+    function openAddModal() {
+      document.getElementById('formModalTitle').innerText = "Add New Item";
+      document.getElementById('editIndex').value = "-1";
+      document.getElementById('itemTag').value = "";
+      document.getElementById('itemTitle').value = "";
+      document.getElementById('itemImg').value = "images/";
+      document.getElementById('itemCaption').value = "";
+      document.getElementById('adminModal').classList.add('active');
+    }
+
+    function closeAddModal() {
+      document.getElementById('adminModal').classList.remove('active');
+    }
+
+    function saveItem() {
+      const idx = parseInt(document.getElementById('editIndex').value);
+      const section = document.getElementById('itemSection').value;
+      const tag = document.getElementById('itemTag').value.trim() || "Credential";
+      const title = document.getElementById('itemTitle').value.trim() || "Untitled Item";
+      const img = document.getElementById('itemImg').value.trim() || "images/cert1.jpg";
+      const caption = document.getElementById('itemCaption').value.trim();
+
+      const newItem = { section, tag, title, img, caption };
+
+      if (idx >= 0) {
+        portfolioItems[idx] = newItem;
+      } else {
+        portfolioItems.push(newItem);
+      }
+
+      localStorage.setItem('wafaa_portfolio_items', JSON.stringify(portfolioItems));
+      renderAll();
+      closeAddModal();
+    }
+
+    function editItem(index) {
+      const item = portfolioItems[index];
+      document.getElementById('formModalTitle').innerText = "Edit Item";
+      document.getElementById('editIndex').value = index;
+      document.getElementById('itemSection').value = item.section;
+      document.getElementById('itemTag').value = item.tag;
+      document.getElementById('itemTitle').value = item.title;
+      document.getElementById('itemImg').value = item.img;
+      document.getElementById('itemCaption').value = item.caption;
+      document.getElementById('adminModal').classList.add('active');
+    }
+
+    function deleteItem(index) {
+      if (confirm(`Are you sure you want to delete "${portfolioItems[index].title}"?`)) {
+        portfolioItems.splice(index, 1);
+        localStorage.setItem('wafaa_portfolio_items', JSON.stringify(portfolioItems));
+        renderAll();
+      }
+    }
+
+    // Export Updated HTML File with Embed Data
+    function exportHTMLFile() {
+      const dataString = JSON.stringify(portfolioItems, null, 2);
+      let pageSource = document.documentElement.outerHTML;
+      pageSource = pageSource.replace(/const defaultData = \[[\s\S]*?\];/, `const defaultData = ${dataString};`);
+      
+      const blob = new Blob([pageSource], { type: 'text/html' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'wafaaibrahim.html';
+      a.click();
+      alert("Updated HTML file exported successfully with all your saved modifications!");
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        forceCloseLightbox();
+        closeAddModal();
+      }
+    });
+
+    // Initial render
+    renderAll();
+  </script>
+</body>
+</html>
